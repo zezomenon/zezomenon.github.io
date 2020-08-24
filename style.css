@@ -51,3 +51,20 @@ body {
 .info-destaque {
 	font-weight: bold;
 }
+.navegar-pag {
+	font-size: 15px;
+  font-weight: 500;
+	color: #e3e6f2;
+	margin: 20px;	
+}
+.indice-title {
+	font-size: 18px;
+  font-weight: 500;
+	color: #e3e6f2;
+	margin-bottom: 0px;
+}
+.indice {
+	font-size: 15px;
+  font-weight: 500;
+	color: #e3e6f2;
+}
