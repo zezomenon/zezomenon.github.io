@@ -30,5 +30,6 @@ body {
   color: #e3e6f2;
 }
 .picture {
-  border-radius: 10px;
+	border-radius: 10px;
+	width: 150px;
 }
