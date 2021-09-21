@@ -7,6 +7,20 @@
     <link rel="stylesheet" type="text/css" href="style.css" media="screen">
   </head>
   <body>
+    <script src="https://unpkg.com/blip-chat-widget" type="text/javascript">
+    </script>
+    <script>
+        (function () {
+            window.onload = function () {
+                new BlipChat()
+                .withAppKey('Ym90dGVzdGUzNzU6YjY1YTQwNDctYTJhZi00NzQyLTlkZTMtMzBlMzRjZGM2ZTlm')
+                .withButton({"color":"#2CC3D5","icon":""})
+                .withCustomCommonUrl('https://chat.blip.ai/')
+                .build();
+            }
+        })();
+    </script>
+
     <h1 class="title-site" id="topo">Israel Menon Lisboa</h1>
     <img
       class="picture"
