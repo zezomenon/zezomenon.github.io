@@ -17,8 +17,8 @@
                 .withButton({"color":"#2CC3D5","icon":""})
                 .withCustomCommonUrl('https://alelo-a2021c1.chat.blip.ai/')
                 .withCustomMessageMetadata({ 
-                      url: document.referrer,
-                      urlAtual: window.location.href,
+                      previousURL: `CORP ${document.referrer}`,
+                      currentURL: `CORP ${window.location.href}`,
                 })
                 .withAccount({
                       fullName: 'John Doe',
@@ -26,8 +26,7 @@
                       phoneNumber: '+15055034455',
                       city: 'Decatur',
                       extras: {
-                          urlAnterior: `Router A - URL anterior: ${document.referrer}`,
-                          urlAtual: `Router A - URL atual: ${window.location.href}`
+                          key: 'value',
                       }
                  })
                 .build();
