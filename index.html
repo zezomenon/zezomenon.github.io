@@ -22,13 +22,15 @@
                         content: "Start",
                         metadata: {
                             "#blip.hiddenMessage": true,
-                            url: `URL: ${document.referrer}`,
-                            urlAtual: `URL atual: ${window.location.href}`,
                         },
                     });
                     setTimeout(() => {
                         blipClient.toogleChat();
                     }, 1000);
+                })
+                .withCustomMessageMetadata({ 
+                      url : document.referrer,
+                      urlAtual : window.location.href,
                 })
                 .withAccount({
                       fullName: 'John Doe',
