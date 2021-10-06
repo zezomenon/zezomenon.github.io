@@ -16,6 +16,19 @@
                 .withAppKey('YXRlc3RlMjoxODE0M2U2Yi1kNDBhLTRlZjItYTg1MC01ZGE0NzRiMWY5MmE=')
                 .withButton({"color":"#2CC3D5","icon":""})
                 .withCustomCommonUrl('https://chat.blip.ai/')
+                .withEventHandler(BlipChat.LOAD_EVENT, function () {
+                    blipClient.sendMessage({
+                        type: "text/plain",
+                        content: "Start",
+                        metadata: {
+                            "#blip.hiddenMessage": true,
+                            url: `URL: ${document.referrer}`,
+                        },
+                    });
+                    setTimeout(() => {
+                        blipClient.toogleChat();
+                    }, 1000);
+                })
                 .withAccount({
                       fullName: 'John Doe',
                       email:'johndoe@gmail.com',
