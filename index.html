@@ -2,7 +2,7 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <title>Testes</title>
+    <title>PORTAL ALELO - DEV / CORP</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" media="all">
     <link rel="stylesheet" type="text/css" href="style.css" media="screen">
   </head>
@@ -13,27 +13,22 @@
         (function () {
             window.onload = function () {
                 new BlipChat()
-                .withAppKey('YWxlbG9kZXY6MzY5NGFhZDAtNjE4OS00YzY2LWFhOTMtYjgxY2Y2MTFiNDIz')
+                .withAppKey('YWxlbG9obWc6MTU4YTQyNzMtMmVhMi00MWY5LWJhNzAtNDI4YWE3NDg1M2Yw')
                 .withButton({"color":"#2CC3D5","icon":""})
                 .withCustomCommonUrl('https://alelo-a2021c1.chat.blip.ai/')
-                .withCustomMessageMetadata({ 
-                      previousURL: `CORP ${document.referrer}`,
-                      currentURL: `CORP ${window.location.href}`,
-                      channel: 'CORP',
-                      cnpj: '33039223000111',
-                      contracts: "['123456', '234567', '345678', '456789', '567890']"
+                 .withCustomMessageMetadata({
+                    channel: "CORP",
+                    cnpj: "10159517800098",
+                    contracts: "['123456', '234567', '345678', '456789', '567890']",
+                    profile: "['Operação', 'Recebimento', 'Decisão']",
+                    cpf: "10159582602",
                 })
-                .withAccount({
-                      fullName: 'Vitor',
-                      email:'archanjovitor@gmail.com',
-                      phoneNumber: '+5537998315250',
-                      city: 'Itauna',
-                      extras: {
-                          profile: "['Operação', 'Recebimento', 'Faturamento', 'Decisão', 'Financeiro']",
-                          cpf: '10159582652',
-                      }
-                 })
-              
+               .withAccount({
+                    fullName: "Vitor DEV CORP",
+                    email: "archanjovitor@gmail.com",
+                    phoneNumber: "+5537998315250",
+                    city: "Itauna"
+                })
                 .build();
             }
         })();
